@@ -1,0 +1,14 @@
+#!/bin/bash
+DEBUG_PATH="$(pwd)/src/var/log/debug.log"
+EXCEPTION_PATH="$(pwd)/src/var/log/exception.log"
+
+echo "==============================================="
+echo "DEBUG LOG:"
+echo "==============================================="
+tail -10 "${DEBUG_PATH}" | sed 's/\\n/\n/g'
+echo "==============================================="
+echo "EXCEPTION LOG:"
+echo "==============================================="
+tail -10 "${EXCEPTION_PATH}" | sed 's/\\n/\n/g'
+echo "==============================================="
+
