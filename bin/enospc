@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Error: ENOSPC: System limit for number of file watchers reached
+# In occasions, restarting vscode solves the issue 
+
+# Temporarly increase file watcher limit for grunt (valid until rebooting)
+sysctl -w fs.inotify.max_user_watches=100000
+
+# Reload system settings 
+sysctl -p
