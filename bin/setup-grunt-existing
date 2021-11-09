@@ -1,0 +1,8 @@
+#!/bin/bash
+bin/clinotty cp dev/tools/grunt/configs/local-themes.js dev/tools/grunt/configs/themes.js
+bin/npm install ajv@^5.0.0 --save
+bin/npm install
+bin/magento cache:clean
+bin/grunt clean
+bin/grunt exec
+bin/grunt less
