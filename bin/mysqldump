@@ -1,2 +1,0 @@
-#!/bin/bash
-bin/n98-magerun2 db:dump --stdout "$@"
