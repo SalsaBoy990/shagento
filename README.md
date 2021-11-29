@@ -1,3 +1,5 @@
 # Shagento
 
-Collection of sh scripts for Magento 2 docker setup
+Collection of bash scripts for Magento 2 docker setup.
+
+See the `development` branch.
