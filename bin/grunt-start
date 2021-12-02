@@ -1,0 +1,5 @@
+#!/bin/bash
+source ./env/db.env
+
+bin/cli grunt refresh
+bin/cli grunt watch:${MYSQL_USER}
